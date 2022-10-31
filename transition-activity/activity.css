@@ -1,1 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
 
+button {
+    transition: 2s;
+    padding: 1em;
+    margin: .2em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5em;
+    color: black;
+    background-color: ghostwhite;
+  }
+
+button:hover {
+    color: white;
+    background-color: cornflowerblue;
+}
+
+body {
+    font-family: 'Josefin Sans', san-serif;
+    text-align: center;
+}
+    
+.caption {
+    position: relative;
+    overflow: hidden;
+    text-align: justify;
+  }
+  
+  .captionmedia {
+    display: block;
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .captionoverlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    color: white;
+    transform: translateY(100%);
+    transition: transform .35s ease-out;
+  }
+  
+  .caption:hover .captionoverlay {
+    transform: translateY(0);
+  }
+  
+  .captionoverlaytitle {
+    margin: 0;
+    padding: 0 0 12px;
+    transform: translateY(calc(-100% - 10px)); /* +10px overlay padding */
+    transition: transform .35s ease-out;
+  }
+  
+  .caption:hover .captionoverlay__title {
+    transform: translateY(0);
+  }
+  
+  .caption::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: transparent;
+    transition: background .35s ease-out;
+  }
+  
+  .caption:hover::before {
+    background: rgba(0, 0, 0, .5);
+  }
+  
+  
+  .caption {
+    …
+    transform: translateZ(0);
+  }
+  
+  
+  img {
+    width: 80%;
+  }
+  
