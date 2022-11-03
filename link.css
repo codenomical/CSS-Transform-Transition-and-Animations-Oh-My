@@ -1,0 +1,18 @@
+body {
+    background-color: mediumvioletred;
+    text-align: center;
+
+}
+
+h1 {
+    font-size: x-large;
+    font-weight: 1000;
+    color: cyan;
+        
+}
+
+.link-1 .link-2 .link-3 {
+    color:blueviolet;
+    font-size: large;
+
+}

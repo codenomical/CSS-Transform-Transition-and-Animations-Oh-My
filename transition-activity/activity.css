@@ -26,14 +26,14 @@ body {
     text-align: justify;
   }
   
-  .captionmedia {
+  .caption__media {
     display: block;
     min-width: 100%;
     max-width: 100%;
     height: auto;
   }
   
-  .captionoverlay {
+  .caption__overlay {
     position: absolute;
     top: 0;
     right: 0;
@@ -45,18 +45,18 @@ body {
     transition: transform .35s ease-out;
   }
   
-  .caption:hover .captionoverlay {
+  .caption:hover .caption__overlay {
     transform: translateY(0);
   }
   
-  .captionoverlaytitle {
+  .caption__overlay__title {
     margin: 0;
     padding: 0 0 12px;
     transform: translateY(calc(-100% - 10px)); /* +10px overlay padding */
     transition: transform .35s ease-out;
   }
   
-  .caption:hover .captionoverlay__title {
+  .caption:hover .caption__overlay__title {
     transform: translateY(0);
   }
   
@@ -85,4 +85,3 @@ body {
   img {
     width: 80%;
   }
-  
